@@ -5,10 +5,9 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.url">jdbc:derby:E:\ness\hr</property>
-
 		<!-- Enable Hibernate's automatic session context management -->
 		<property name="current_session_context_class">thread</property>
-
+		<property name="hibernate.hbm2ddl.auto">none</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
 		<mapping class="com.dt.demo.Employee"></mapping>
 	</session-factory>
